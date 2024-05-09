@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;1000&family=Open+Sans:wght@400;700;800&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page d-flex">
+      <div class="sidebar bg-white p-20 p-relative">
+        <h3 class="p-relative txt-c mt-0">Logo</h3>
+        <ul>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-solid fa-chart-line fa-fw"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="active d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-brands fa-discourse fa-fw"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-solid fa-user-group fa-fw"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-solid fa-sheet-plastic fa-fw"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content w-full">
+        <!-- start head -->
+        <div class="head bg-white p-15 between-flex">
+          <div class="search p-relative">
+            <input class="p-10" type="search" placeholder="Type A Keyword" />
+          </div>
+          <div class="icons d-flex align-center">
+            <span class="notification p-relative">
+              <i class="fa-solid fa-bell"></i>
+            </span>
+            <img src="images/child-1837375_640.webp" alt="" />
+          </div>
+        </div>
+        <!-- end head -->
+        <h1 class="p-relative">Settings</h1>
+        <div class="settings-page">
+          <!-- start setting box -->
+          <div class="first-widget">
+            <div class="head">
+              <h2>Sit Control</h2>
+              <p>Control The Website if Maintenance</p>
+            </div>
+            <div class="content">
+              <div class="info">
+                <h4>Website Control</h4>
+                <p>Open/Close Website And Type The Reason</p>
+              </div>
+              <div class="check-div">
+                <label>
+                  <input class="toggle-checkbox" type="checkbox" checked />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+            </div>
+            <textarea
+              class="text-area"
+              placeholder="Close Message Content"
+            ></textarea>
+          </div>
+
+          <!-- end setting box -->
+          <!-- start general info -->
+          <div class="general-info">
+            <h2>General Info</h2>
+            <p>General Information About Your Account</p>
+
+            <form>
+              <label for="">First Name</label>
+              <input class="first-name" type="text" placeholder="First Name" />
+              <label for="">Last Name</label>
+              <input class="last-name" type="text" placeholder="Last Name" />
+              <label for="">E-mail</label>
+              <input class="mail" type="email" placeholder="E-mail" />
+            </form>
+            <button>Change</button>
+          </div>
+          <!-- end general info -->
+          <!-- start security info -->
+          <div class="security-info">
+            <h2>Security Info</h2>
+            <p>Security Information About Your Account</p>
+            <div class="row pass">
+              <div class="info">
+                <h4>Pssword</h4>
+                <p>Last Change On 25/01/2022</p>
+              </div>
+              <button>Change</button>
+            </div>
+            <div class="row Auth">
+              <div class="info">
+                <h4>Two-Factor Authentication</h4>
+                <p>Enable/Disable The Featur</p>
+              </div>
+              <label>
+                <input class="toggle-checkbox" type="checkbox" checked />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+            <div class="row devices">
+              <div class="info">
+                <h4>Devices</h4>
+                <p>Check The Login Devices List</p>
+              </div>
+              <button>Devices</button>
+            </div>
+          </div>
+          <!-- end security info -->
+          <!-- start social info -->
+          <div class="social-info">
+            <h2>Social Info</h2>
+            <p>Social Media Information</p>
+            <div class="row twitter">
+              <i class="fa-brands fa-twitter"></i>
+              <span>Twitter Username</span>
+            </div>
+            <div class="row facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+              <span>Facebook Username</span>
+            </div>
+            <div class="row linkedin">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>Linkdin Username</span>
+            </div>
+            <div class="row youtube">
+              <i class="fa-brands fa-youtube"></i>
+              <span>Youtube Username</span>
+            </div>
+          </div>
+          <!-- end social info -->
+          <!-- start Backup mamager -->
+          <div class="backup-manager">
+            <h2>Backup Manager</h2>
+            <p>Control Backup Time And Location</p>
+            <div class="div-time">
+              <div class="time">
+                <input type="radio" name="" id="" checked />
+                <label for="">Daily</label>
+              </div>
+              <div class="time">
+                <input type="radio" name="" id="" />
+                <label for="">Weekly</label>
+              </div>
+              <div class="time">
+                <input type="radio" name="" id="" />
+                <label for="">Monthly</label>
+              </div>
+            </div>
+
+            <div class="body">
+              <div class="item">
+                <i class="fa-solid fa-server"></i>
+                <span>Megaman</span>
+              </div>
+              <div class="item">
+                <i class="fa-solid fa-server"></i>
+                <span>Zero</span>
+              </div>
+              <div class="item">
+                <i class="fa-solid fa-server"></i>
+                <span>Sigma</span>
+              </div>
+            </div>
+          </div>
+          <!-- end Backup manager -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
