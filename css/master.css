@@ -1194,7 +1194,7 @@ ul {
 /* start own-projects */
 .own-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -1222,7 +1222,7 @@ ul {
   position: relative;
 }
 .own-projects .my-project .head .left h4 {
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 25px;
 }
 .own-projects .my-project .head .left p {
@@ -1240,10 +1240,12 @@ ul {
 .own-projects .my-project .images {
   padding: 20px;
   border-bottom: 1px solid #eee;
+  position: relative;
 }
 .own-projects .my-project .images img {
   width: 30px;
   margin-left: -15px;
+  border: 2px solid white;
 }
 .own-projects .my-project .mid {
   margin-top: 20px;
@@ -1252,21 +1254,19 @@ ul {
   right: 15px;
   border-bottom: 1px solid #eee;
 }
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .own-projects .my-project .mid {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    
   }
   .own-projects .my-project .foot {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
   .own-projects .my-project .foot .progress {
     margin-top: 30px;
@@ -1284,7 +1284,6 @@ ul {
   margin-top: 80px;
   display: flex;
   justify-content: space-between;
-  
 }
 .own-projects .my-project .foot .progress {
   position: relative;
@@ -1301,9 +1300,355 @@ ul {
   border-radius: 5px;
 }
 .own-projects .my-project .foot span {
-color: var(--grey-color);
+  color: var(--grey-color);
 }
 /* end own-projects */
+
+/* start courses-page */
+.courses-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+@media (max-width: 767px) {
+  .courses-page {
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+    margin: 10px;
+  }
+}
+.courses-page .my-course {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.courses-page .my-course .cover {
+  max-width: 100%;
+}
+.my-course .instructor {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.my-course .text {
+  padding: 20px;
+  margin-top: 20px;
+}
+.my-course h4 {
+  margin: 0;
+}
+.my-course .description {
+  color: var(--grey-color);
+  margin-top: 15px;
+  font-size: 14px;
+}
+.my-course .info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding: 10px;
+}
+.my-course .info .title {
+  position: absolute;
+  left: 50%;
+  top: -14px;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background-color: var(--blue-color);
+  border-radius: 6px;
+  color: white;
+}
+.info .left,
+.info .right {
+  margin-top: 15px;
+  color: var(--red-color);
+}
+/* end courses-page */
+
+/* start Freinds-page */
+.Freinds-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media (max-width: 767px) {
+  .Freinds-page {
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.Freinds-page .my-frends {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.Freinds-page .my-frends .head {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.Freinds-page .my-frends .head i {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.Freinds-page .my-frends .head i:hover {
+  color: white;
+  background-color: var(--blue-color);
+}
+.Freinds-page .my-frends .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Freinds-page .my-frends img {
+  width: 100px;
+  height: 100px;
+}
+.Freinds-page .my-frends .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+}
+.Freinds-page .my-frends .info h4 {
+  margin-bottom: 0;
+}
+.Freinds-page .my-frends .info p {
+  color: var(--grey-color);
+  margin-top: 10px;
+}
+.Freinds-page .my-frends .details {
+  margin-top: 20px;
+
+  border-bottom: 1px solid #eee;
+}
+.Freinds-page .my-frends .details .row {
+  margin-bottom: 12px;
+}
+.Freinds-page .my-frends .details .row i {
+  margin-right: 8px;
+  color: var(--blue-color);
+}
+.Freinds-page .my-frends .details .row span {
+  color: var(--grey-color);
+}
+.my-frends .foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .my-frends .foot {
+    flex-direction: column;
+  }
+  .my-frends .foot p {
+    margin-bottom: 20px;
+  }
+}
+.my-frends .foot p {
+  color: var(--grey-color);
+}
+.my-frends .foot .right span {
+  padding: 5px 10px;
+  border-radius: 7px;
+  color: white;
+}
+.my-frends .foot .right span:first-child {
+  background-color: var(--red-color);
+}
+.my-frends .foot .right span:last-child {
+  margin-left: 5px;
+  background-color: var(--blue-color);
+}
+/* end Freinds-page */
+/* start files-page */
+.files-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media (max-width: 767px) {
+  .files-page {
+    grid-template-columns: minmax(300px, 1fr);
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.files-page .my-file {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  min-height: 550px;
+}
+.files-page .my-file h2 {
+  margin-top: 0;
+}
+.files-page .my-file .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  border: 1px solid #eee;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+.files-page .my-file .row .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.files-page .my-file .row .left .icon {
+  background-color: #0075ff4f;
+}
+.files-page .my-file .row .left .info {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.files-page .my-file .row .left i {
+  padding: 20px;
+  color: var(--blue-color);
+  font-size: 25px;
+}
+.files-page .my-file .row .left h4 {
+  margin-bottom: 5px;
+}
+.files-page .my-file .row .right span {
+  color: var(--grey-color);
+}
+.upload {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  background-color: var(--blue-color);
+  padding: 10px 20px;
+  border-radius: 7px;
+  color: white;
+}
+.upload i {
+  margin-right: 5px;
+  animation: move-arrow 0.8s infinite;
+}
+/* end files page */
+/* start plans-page */
+.plans-page {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+gap: 20px;
+margin-left: 20px;
+margin-right: 20px;
+}
+@media(max-width:767px) {
+  .plans-page {
+    grid-template-columns: minmax(200px,1fr);
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .plans-page .plan {
+    min-height: 900px;
+  }
+}
+.plans-page .plan {
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+overflow: hidden;
+position: relative;
+min-height: 850px;
+}
+.plan .head {
+background-color: var(--green-color);
+padding: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border: 3px solid white;
+outline: 3px solid var(--green-color);
+margin-bottom: 20px;
+}
+.plan .head .title {
+margin-bottom: 10px;
+font-size: 20px;
+color: white;
+font-weight: bold;
+}
+.head .div {
+  position: relative;
+}
+.head .div i {
+  position: absolute;
+  left: -13px;
+  color: white;
+}
+.plan .head .price {
+color: white;
+font-size: 26px;
+font-weight: bold;
+
+}
+.plan .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #eee;
+  padding: 8px;
+}
+.plan .row .left {
+  display: flex;
+}
+.plan .row .left i {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+color: var(--green-color);
+font-size: 20px;
+}
+.plan .row .left p {
+margin-left: 30px;
+color: var(--grey-color);
+}
+.plan .row .right {
+  color: var(--grey-color);
+  font-size: 20px;
+}
+.plan button {
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+ margin-top: 30px;
+ padding: 10px 20px;
+ border: none;
+border-radius: 6px;
+background-color: var(--green-color);
+color: white;
+font-weight: bold;
+font-size: 18px;
+}
+/* end plans-page */
 /* start animation */
 @keyframes change-color {
   from {
@@ -1311,6 +1656,15 @@ color: var(--grey-color);
   }
   to {
     background-color: white;
+  }
+}
+@keyframes move-arrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
   }
 }
 /* end animation */
