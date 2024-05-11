@@ -1579,15 +1579,25 @@ position: relative;
 min-height: 850px;
 }
 .plan .head {
-background-color: var(--green-color);
 padding: 50px;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
 border: 3px solid white;
-outline: 3px solid var(--green-color);
 margin-bottom: 20px;
+}
+.plan .free {
+  background-color: var(--blue-color);
+  outline: 1px solid var(--blue-color);
+}
+.plan .basic {
+  background-color: var(--green-color);
+  outline: 1px solid var(--green-color);
+}
+.plan .premium {
+  background-color: var(--red-color);
+  outline: 1px solid var(--red-color);
 }
 .plan .head .title {
 margin-bottom: 10px;
@@ -1643,10 +1653,19 @@ color: var(--grey-color);
  padding: 10px 20px;
  border: none;
 border-radius: 6px;
-background-color: var(--green-color);
+
 color: white;
 font-weight: bold;
 font-size: 18px;
+}
+.free button {
+  background-color: var(--blue-color);
+}
+.basic button {
+  background-color: var(--green-color);
+}
+.premium button {
+  background-color: var(--red-color);
 }
 /* end plans-page */
 /* start animation */
